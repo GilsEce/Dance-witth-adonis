@@ -42,4 +42,4 @@ Server.middleware.register([
 */
 Server.middleware.registerNamed({
   log: () => import('App/Middleware/LogRequest')
-})
+});
