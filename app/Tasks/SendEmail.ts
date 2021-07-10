@@ -1,6 +1,6 @@
 import { BaseTask } from 'adonis5-scheduler/build'
 
-export default class Log extends BaseTask {
+export default class SendEmail extends BaseTask {
 	public static get schedule() {
 		return '*/1 * * * * *'
 	}
@@ -14,7 +14,7 @@ export default class Log extends BaseTask {
 
 	public async handle() {	
 		setTimeout(() => {
-			console.log('hello');
-		}, 10000);
+			console.log('Send Email');
+		}, 2000);
   	}
 }
